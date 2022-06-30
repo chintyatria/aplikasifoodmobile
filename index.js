@@ -7,7 +7,7 @@ const app = express();
 
 
 app.use(bodyParser.json());
-app.use('/hotel', dataRoutes);
+app.use('/pesawat', dataRoutes);
 
 app.get('/', (req,res)=>{
     res.send('Halo');
