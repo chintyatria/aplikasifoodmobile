@@ -40,10 +40,10 @@ sepatuify.delete('/:id', (req,res) => {
 
 sepatuify.patch('/:id', (req,res)=>{
     const { id } = req.params;
-    const { namasepatu, deskripsi, gambar, harga} = req.body;
+    const { nama, deskripsi, gambar, harga} = req.body;
     const data = sepatu.find((data)=> data.id === id);
 
-    if(namasepatu) data.namasepatu = namasepatu;
+    if(nama) data.nama = nama;
     if(deskripsi) data.deskripsi = deskripsi; 
     if(gambar) data.gambar = gambar;  
     if(harga) data.harga = harga;
