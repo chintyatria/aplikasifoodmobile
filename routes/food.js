@@ -6,9 +6,9 @@ let food = [];
 
 appFood.get('/', (req, res) => {
     console.log(food);
-    res.send(sepatu);
+    res.send(food);
 
-    // res.send('Menu sepatu');
+    // res.send('Menu Food');
 });
 
 appFood.post('/', (req,res)=>{
