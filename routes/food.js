@@ -40,7 +40,7 @@ appFood.delete('/:id', (req,res) => {
 
 appFood.patch('/:id', (req,res)=>{
     const { id } = req.params;
-    const { nama, deskripsi, gambar, harga} = req.body;
+    const { nama, deskripsi, gambar} = req.body;
     const data = food.find((data)=> data.id === id);
 
     if(nama) data.nama = nama;
